@@ -1,0 +1,7 @@
+[submodule "thirdparty\\stb"]
+    path = thirdparty/stb
+	url = https://github.com/nothings/stb.git
+
+[submodule "thirdparty\\tinyobjloader-c"]
+	path = thirdparty/tinyobjloader-c
+	url =https://github.com/syoyo/tinyobjloader-c.git
