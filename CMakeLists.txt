@@ -5,7 +5,6 @@ set(SOURCE_FILES
   main.c
 )
 
-SET(CMP0012 NEW)
 
 add_executable(v_test ${SOURCE_FILES})
 
@@ -27,8 +26,7 @@ endif(GLFW3_FOUND)
 set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${CMAKE_SOURCE_DIR}/cmake/modules/")
 
 #Finding and linking Vulkan
-
-find_package (Vulkan)
+find_package (Vulkan REQUIRED)
 if (Vulkan_FOUND)
     message(STATUS "Found Vulkan, Including and Linking now")
     include_directories(${Vulkan_INCLUDE_DIRS})
